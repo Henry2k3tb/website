@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #e6e6e6;
+}
+.site-logo{
+    padding-left: 30px;
+}
+.header-info ul{
+    padding-left: 150px;
+    display: flex;
+    list-style: none;
+    line-height: 60px;
+}
+.header-info ul li a{
+    font-weight: 700;
+    color: #616161;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.main-page {
+    display: flex;
+    position: relative;
+    padding-left: 0 !important;
+}
+
+.header {
+    background-color: #fafafa;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, .03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, .03), 0 0.25rem 0.53125rem rgba(4, 9, 20, .05), 0 0.125rem 0.1875rem rgba(4, 9, 20, .03);
+}
+
+.app-main {
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 220px;
+    padding: 10px 0px !important;
+    font-weight: 700;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 20;
+}
+nav ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out .2s all;
+}
+
+nav ul li a:hover {
+    color: #d1d1d1;
+}
+
+.ico-side {
+    margin-right: 10px;
+}
+
+.main-content {
+    padding-left: 240px;
+    padding-bottom: 20px;
+    /* height: 100vh; */
+}
+
+.main-content .title-page {
+    padding-top: 20px;
+}
+
+.main-content .statistics {
+    box-sizing: border-box;
+    display: flex;
+}
+.main-content .statistics a{
+    text-decoration: none;
+}
+.widget-chart {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.widget-chart{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+.chart{
+    padding: 15px;
+    border-radius: 10px;
+}
+/* table{
+    border: solid 1px #000;
+    border-collapse: collapse;
+}
+.revenue th, td{
+    width: 200px;
+    text-align: center;
+} */
+.chart h4{
+    margin-bottom: 25px;
+}
+.chart span{
+    margin-left: 180px;
+    font-weight: 700;
+}
+.form-login{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-gr{
+    padding: 15px;
+    border-radius: 10px;
+}
+.addPro .form-group{
+    margin-bottom: 20px;
+}

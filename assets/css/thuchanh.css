@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 10px auto 360px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+/* Product */
+.main__product {
+    display: flex;
+    padding: 10px;
+}
+
+.main__product-img {
+    width: 60%; /* Hoặc kích thước mong muốn */
+    padding-top: 40%; /* Đảm bảo tỉ lệ khung hình mong muốn */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    display: block; /* Đảm bảo phần tử được hiển thị như một khối */
+}
+
+
+.main__product-info {
+    width: 60%;
+    padding: 10px;
+}
+.main__product-name{
+    padding-left: 11px;
+}
+.slecrtsize{
+    font-size: 2rem;
+    padding-left: 11px;
+}
+/* Column layout */
+.column-layout {
+ 
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+
+/* .column-layout__category {
+    width: 20%;
+    padding: 0 16px;
+} */
+
+.column-layout__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-item {
+    width: 100%;
+    padding: 0 16px;
+}
+
+/* Feature layout */
+.feature-layout{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 36px;
+}
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(192, 227, 222);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(227, 200, 192);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(226, 192, 227);
+}
+
+/* mobile and tablet */
+@media only screen and (max-width:63.9375em){
+    .main__product-info{
+        width: 100%;
+    }
+    .main__product{
+        flex-direction: column-reverse;
+    }
+    .main__product-desc{
+        display: none;
+    }
+}
+@media only screen and (max-width:46.1845em){
+    .main__product-img{
+        width: 95%;
+        padding-top: 85%;
+    }
+    .column-layout__category{
+        display: none;
+    }
+     .column-item{
+        width: 100%;
+        text-align: center;
+    }
+    .column-layout__container{
+        width: 100%;
+    }
+    .feature-layout{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width :43.25em) and (max-width: 63.9375em){
+     .main__product-img{
+        width: 85%;
+        padding-top: 85%;
+    }
+    .column-item{
+        width: 33.333%;
+    }
+}
